@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$theme: (
+    light:(textColor: #000,
+        bg:#fff,
+        logo: darkblue,
+        bgSoft:#f6f3f3,
+        textColorSoft: lightgray,
+        border: #444,
+    ),
+    dark: (textColor: whitesmoke,
+        bg:#222,
+        logo: #fff,
+        bgSoft:#333,
+        textColorSoft: lightgray,
+        border: #444,
+    ))
