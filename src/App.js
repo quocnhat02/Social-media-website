@@ -9,6 +9,8 @@ import {
 import Navbar from './components/navbar/Navbar';
 import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightBar/RightBar';
+import Home from './pages/home/Home';
+import Profile from './pages/profile/Profile';
 
 const App = () => {
   const Layout = () => {
@@ -25,14 +27,16 @@ const App = () => {
   };
 
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="profile/:id" element={<Profile />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };
 
