@@ -14,8 +14,10 @@ const RightBar = () => {
               />
               <span>Jane Doe</span>
             </div>
-            <button>follow</button>
-            <button>dismiss</button>
+            <div className="buttons">
+              <button>follow</button>
+              <button>dismiss</button>
+            </div>
           </div>
         </div>
       </div>
